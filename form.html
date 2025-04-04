@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt/br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQO9WiZwSg96vDK3uEU2uv7LM2S_t08AhbAVzdzpoPSQ&s" type="image/x-icon">
+        <link href="../CSS/estilo.css" rel="stylesheet" type="text/css">
+        <title>Unicid Principal</title>
+    </head>
+    <body>
+        <header>
+            <div align="center">
+                <a href="https://www.unicid.edu.br"><img src="../Imagens/logo_unicid2.png" alt="Unicid"></a>
+            </div>
+			<nav id="menu">
+				<ul class="lista_menu">
+					<li><a href="file:///D:/Site%20Unicid/SiteInst.html" class="item_menu"> Página principal </a></li>
+					<li><a href="file:///D:/Site%20Unicid/HTML/cursos.html" class="item_menu"> Cursos </a></li>
+					<li><a href="file:///D:/Site%20Unicid/HTML/sobre.html" class="item_menu"> Sobre </a></li>
+					<li><a href="file:///D:/Site%20Unicid/HTML/Form.html" class="item_menu"> Se Inscreva </a></li>
+				</ul>
+			</nav>
+		</header>
+        <div align="center">
+            <h1 class="escola"> Escola Virtual </h1>
+            <h2> Formulário de pré-inscrição </h2>
+        </div>
+        <div style = "margin-left: 20%; margin-right: 20%;" align="left">
+            <form method="post" action="" enctype="multipart/form-data">
+                <fieldset style = " border-width: 2px; border-style: solid; border-color: black; background-color: lightblue; border: solid blue 2px">
+                    <legend><b>Dados Pessoais</b></legend>
+                        <lable>Nome do Aluno:</lable><br>
+                        <input type="text" required><br><br>
+                        <lable>Data de Nascimento:</lable><br>
+                        <input type="date" name="data" required><br><br>
+                        <lable>Nome da mãe:</lable><br>
+                        <input type="text" name="nomemae" required><br><br>
+                        <lable>Nome do pai:</lable><br>
+                        <input type="text" name="nomepai" required><br><br>
+                        <lable>Telefone/Celular:</lable><br>
+                        <input type="text" maxlength="16" placeholder="55 11 22222-3333" size="16" name="numero" required><br><br>
+                        <lable>E-Mail:</lable><br>
+                        <input type="email" name="email" required><br><br>
+                        <lable> Anexe a foto do RG: </lable><br>
+                        <input type="file" name="RG"><br><br>
+                        <lable> Anexe a foto do Histórico Escolar: </lable><br>
+                        <input type="file" name="historico">
+
+                </fieldset>
+                <br>
+                <fieldset style = " border-width: 2px; border-style: solid; border-color: black; background-color: lightblue; border: solid blue 2px">
+                    <legend><b> Dados Pessoais </b></legend>
+                        <lable> Sexo:</lable><br>
+                        <input type="radio" name="sexo">Masculino<br>
+                        <input type="radio" name="sexo">Feminino<br><br>
+                        <lable> Estado Civil: </lable><br>
+                        <input type="radio" name="civil">Casado(a)<br>
+                        <input type="radio" name="civil">Solteiro(a)<br>
+                        <input type="radio" name="civil">Viúvo(a)<br><br>
+                        <lable>Possui deficiência?</lable><br>
+                        <input type="checkbox" name="fisica">Física <input type="checkbox" name="auditiva">Auditiva <input type="checkbox" name="visual">Visual <input type="checkbox" name="cognitiva">Cognitiva<br>
+                        <input type="text" name="defdes" placeholder="Descreva aqui"><br><br> 
+                        <lable> Selecione o curso para a inscrição </lable><br>
+                        <select>
+                            <option> Análise e desenvolvimento de Sistemas </option>
+                            <option> Direito </option>
+                            <option> Engenharia Civil </option>
+                            <option> Medicina </option>
+                            <option> Psicologia </option>
+                            <option> Arquitetura e Urbanismo </option>
+                            <option> Ciências Contábeis </option>
+                            <option> Enfermagem </option>
+                            <option> Educação Física </option>
+                            <option> Gestão de TI </option>
+                        </select>
+                        <br><br>
+                        <lable> Selecione o horário </lable><br>
+                        <select>
+                            <option> Matutino </option>
+                            <option> Vespertino </option>
+                            <option> Noturno </option>
+                        </select>
+                        <br><br>
+                        <lable> Selecione o modo de ingresso </lable><br>
+                        <input type="radio" name="ingresso">Enem<br>
+                        <input type="radio" name="ingresso">Vestibular Interno<br>
+                        <input type="radio" name="ingresso">Pagamento integral<br>
+                </fieldset>
+                <br>
+                <fieldset style=" border-width: 2px; border-style: solid; border-color: black; background-color: lightblue; border: solid blue 2px">
+                    <legend><b>Login</b></legend>
+                        <lable>Usuário:</lable><br>
+                        <input type="text" placeholder="E-mail ou CPF" name="ID" required><br><br>
+                        <lable>Senha:</lable><br>
+                        <input type="password" maxlength="8" placeholder="Digite sua senha" name="senha" required><br><br>
+                        <lable>Senha confirmação:</lable><br>
+                        <input type="password" maxlength="8" placeholder="Digite sua senha novamente" name="senhac" required>
+                </fieldset>
+                <br>
+                    <div align="center">
+                        <input type="submit" name="enviar" value="Enviar Dados">
+                        <input type="reset" name="limpar" value="Limpar Dados">
+                    </div>
+            </form>
+        </div>
+    </body>
+</html>
